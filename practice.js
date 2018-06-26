@@ -38,6 +38,10 @@ first(names, function(firstName){
 });
 // Do not edit the code above.
 
+function first (arr,cb){
+  cb(arr[0]);
+}
+
 
 
 ////////// PROBLEM 2 //////////
@@ -55,7 +59,10 @@ last(names, function(lastName){
   return lastName;
 });
 // Do not edit the code above.
-
+function last(arr,cb) {
+  cb(arr.pop())
+  
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -73,7 +80,9 @@ multiply(4, 3, function(answer){
 });
 // Do not edit the code above.
 
-
+function multiply(num1,num2,cb) {
+  cb(num1*num2)
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -85,6 +94,7 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
