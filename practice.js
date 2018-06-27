@@ -28,7 +28,9 @@
 */
 
 // Code Here 
-
+function first(arr,cb){
+  cb(arr[0])
+};
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
@@ -46,7 +48,9 @@ first(names, function(firstName){
   Write a function called last that takes in an array and a callback function. 
   Then invoke the callback, passing in the last element in the array as the argument.
 */
-
+function last (arr,cb){
+  cb(arr.pop())
+}
 //Code Here
 
 // Do not edit the code below.
@@ -66,6 +70,9 @@ last(names, function(lastName){
 */
 
 //Code Here
+function multiply(a,b,cb){
+  cb(a*b);
+}
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -85,6 +92,13 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains(arr,nam,cb){
+  if(arr.filter(element){element===nam}){
+    cb(true);
+  }else{cb(false)}
+};
+  
+
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
