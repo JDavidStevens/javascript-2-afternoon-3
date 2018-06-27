@@ -94,7 +94,13 @@ function multiply(num1,num2,cb) {
 */
 
 //Code Here 
-
+function testArray(arr,name,cb) {
+  for(let i=0;i<arr.length;i++){
+    if([i]===name){
+      cb(true)
+    }else{cb(false)}
+  }
+}
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -116,6 +122,7 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq(arr,cb){}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
@@ -134,6 +141,8 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 
+
+
 // Do not edit the code below.
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
@@ -150,6 +159,13 @@ each(names, function(item, indice){
 */
 
 // Code here
+function getUserById(arr,key,cb){
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]===key){
+      cb([i])
+    }
+  }
+}
 
 // Do not edit the code below.
 var users = [
