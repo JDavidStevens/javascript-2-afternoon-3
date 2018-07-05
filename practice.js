@@ -100,14 +100,14 @@ function multiply(num1,num2,cb) {
 */
 
 //Code Here 
-function contains(arr,nam,cb){
-  for(var i =0; i<arr.length;i++){
-    if(arr[i]===nam){
-    return cb(true);
+function contains(arr,name,cb) {
+  for(var i=0;i < arr.length;i++){
+    if(arr[i]===name){
+      return cb(true);
     }else{return cb(false)}
   }
 }
-
+  
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
   if(result === true){
@@ -128,6 +128,14 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+// function uniq(arr,cb){
+//   arr.filter(function(i){
+//     console.log(i);
+//     delete i==i
+//   })
+//   return cb(arr);
+// }
+
 function uniq(arr, cb) {
   for (let i = arr.length; i >= 0; i--) {
     if (arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) {
@@ -153,13 +161,11 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 function each(arr,cb){
-  for(var i = 0; i<arr.length; i++){
-    cb(arr[i], arr.indexOf(i))
-  }return cb;
+  for(var i = 0; i<arr.length;i++){
+   cb(arr[i],arr.indexOf(i));
   }
-  
-
-
+  return cb
+}
 
 
 // Do not edit the code below.
@@ -179,11 +185,13 @@ each(names, function(item, indice){
 
 // Code here
 function getUserById(arr,id,cb){
-  for(var i = 0; i < arr.length; i++){
-    if(arr[i].id===id){
-      cb(arr[i])
+  for(var i = 0;i<arr.length;i++){
+    if( arr[i].id===id){
+     ((arr[i].id));
     }
-  }return cb;
+   return cb(arr[i])
+  }
+
 }
 
 // Do not edit the code below.
